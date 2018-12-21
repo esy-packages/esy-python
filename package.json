@@ -1,0 +1,27 @@
+{
+  "name": "esy-python",
+  "version": "0.1.0",
+  "description": "Python  (Cpython) packaged for esy",
+  "license": "MIT",
+  "esy": {
+    "build": "which python3"
+  },
+  "dependencies": {
+    "python": "*"
+  },
+  "resolutions": {
+    "python": {
+      "source": "https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgz#md5:99f78ecbfc766ea449c4d9e7eda19e83",
+      "override": {
+        "buildsInSource": true,
+        "build": [
+          "./configure --prefix #{self.install}",
+          "make"
+        ],
+        "install": [
+          "make install"
+        ]
+      }
+    }
+  }
+}

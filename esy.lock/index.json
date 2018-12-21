@@ -1,0 +1,39 @@
+{
+  "checksum": "b04e1ebf0b2ad39a8ced6c16cbc2f456",
+  "root": "hello-reason@link:./package.json",
+  "node": {
+    "python@archive:https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgz#md5:99f78ecbfc766ea449c4d9e7eda19e83@fbed7be2": {
+      "id":
+        "python@archive:https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgz#md5:99f78ecbfc766ea449c4d9e7eda19e83@fbed7be2",
+      "name": "python",
+      "version":
+        "archive:https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgz#md5:99f78ecbfc766ea449c4d9e7eda19e83",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgz#md5:99f78ecbfc766ea449c4d9e7eda19e83"
+        ]
+      },
+      "overrides": [
+        {
+          "buildsInSource": true,
+          "build": [ "./configure --prefix #{self.install}", "make" ],
+          "install": [ "make install" ]
+        }
+      ],
+      "dependencies": [],
+      "devDependencies": []
+    },
+    "hello-reason@link:./package.json": {
+      "id": "hello-reason@link:./package.json",
+      "name": "hello-reason",
+      "version": "link:./package.json",
+      "source": { "type": "link", "path": ".", "manifest": "package.json" },
+      "overrides": [],
+      "dependencies": [
+        "python@archive:https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgz#md5:99f78ecbfc766ea449c4d9e7eda19e83@fbed7be2"
+      ],
+      "devDependencies": []
+    }
+  }
+}
