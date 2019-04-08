@@ -2,8 +2,7 @@
   "name": "esy-python",
   "version": "3.7.1000",
   "description": "Python  (Cpython) packaged for esy",
-  "source": "https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgz#md5:99f78ecbfc766ea449c4d9e7eda19e83",
-  "override": {
+  "esy": {
     "buildsInSource": true,
     "build": [
       "./configure --prefix #{self.install}",
