@@ -24,11 +24,11 @@ jobs:
       - template: utils/restore-build-cache.yml
       - script: "esy install"
         displayName: "esy install"
-      - script: "esy build"
-        displayName: "esy build"
-      - template: utils/publish-build-cache.yml
-      - task: PublishBuildArtifacts@1
-        displayName: "Publish Artifact: ${{ parameters.platform }}"
-        inputs:
-          PathtoPublish: "_release"
-          ArtifactName: ${{ parameters.platform }}
+      - script: "esy x python --version"
+        displayName: "Build and dry run"
+      # - template: utils/publish-build-cache.yml
+      # - task: PublishBuildArtifacts@1
+      #   displayName: "Publish Artifact: ${{ parameters.platform }}"
+      #   inputs:
+      #     PathtoPublish: "_release"
+      #     ArtifactName: ${{ parameters.platform }}
