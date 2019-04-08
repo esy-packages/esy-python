@@ -11,5 +11,8 @@
     "install": [
       "make install"
     ]
+  },
+  "dependencies": {
+    "esy-zlib": "prometheansacrifice/esy-zlib#f204718d6f3b8c11ec3e4cddad299b723107bf15"
   }
 }

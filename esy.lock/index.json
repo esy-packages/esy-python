@@ -1,7 +1,23 @@
 {
-  "checksum": "0cc961f41dbf4ff5ab5654751a4ba36e",
+  "checksum": "fd2c9b8b0248d8fc43dfe849da29d4ed",
   "root": "esy-python@link-dev:./package.json",
   "node": {
+    "esy-zlib@github:prometheansacrifice/esy-zlib#f204718d6f3b8c11ec3e4cddad299b723107bf15@d41d8cd9": {
+      "id":
+        "esy-zlib@github:prometheansacrifice/esy-zlib#f204718d6f3b8c11ec3e4cddad299b723107bf15@d41d8cd9",
+      "name": "esy-zlib",
+      "version":
+        "github:prometheansacrifice/esy-zlib#f204718d6f3b8c11ec3e4cddad299b723107bf15",
+      "source": {
+        "type": "install",
+        "source": [
+          "github:prometheansacrifice/esy-zlib#f204718d6f3b8c11ec3e4cddad299b723107bf15"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    },
     "esy-python@link-dev:./package.json": {
       "id": "esy-python@link-dev:./package.json",
       "name": "esy-python",
@@ -12,7 +28,9 @@
         "manifest": "package.json"
       },
       "overrides": [],
-      "dependencies": [],
+      "dependencies": [
+        "esy-zlib@github:prometheansacrifice/esy-zlib#f204718d6f3b8c11ec3e4cddad299b723107bf15@d41d8cd9"
+      ],
       "devDependencies": []
     }
   }
