@@ -5,14 +5,16 @@
   "esy": {
     "buildsInSource": true,
     "build": [
-      "./configure --prefix #{self.install}",
-      "make"
+      "#{os == 'windows' ? './PCbuild/build.bat -e -p x64' : './build.sh' }"
     ],
-    "install": [
-      "make install"
-    ]
+    "exportedEnv": {
+      "PATH":  {
+        "scope": "global",
+        "val": "#{ os == 'windows' ? (self.target_dir / 'PCbuild' / 'amd64' : $PATH) : $PATH }"
+      }
+    }
   },
   "dependencies": {
-    "esy-zlib": "prometheansacrifice/esy-zlib#f204718d6f3b8c11ec3e4cddad299b723107bf15"
+    "esy-zlib": "prometheansacrifice/esy-zlib#cd046fb7258deabffaabe5d6963454858b04c1d3"
   }
 }
