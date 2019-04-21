@@ -5,10 +5,10 @@
   "esy": {
     "buildsInSource": true,
     "build": [
-      "#{os == 'windows' ? './PCbuild/build.bat -e -p x64 -c Release' : './build.sh' }"
+      "#{os == 'windows' ? './PCbuild/build.bat -e -p x64 -c Release' : './build-unix.sh' }"
     ],
     "exportedEnv": {
-      "PATH":  {
+      "PATH": {
         "scope": "global",
         "val": "#{ os == 'windows' ? (self.target_dir / 'PCbuild' / 'amd64' : $PATH) : $PATH }"
       }
