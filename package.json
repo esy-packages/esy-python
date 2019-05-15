@@ -15,6 +15,7 @@
     }
   },
   "dependencies": {
-    "esy-zlib": "prometheansacrifice/esy-zlib#cd046fb7258deabffaabe5d6963454858b04c1d3"
+    "esy-zlib": "esy-packages/esy-zlib#f691047f6fe5f2272e7a2e890f8055d3b0071b10",
+    "esy-libffi": "esy-ocaml/libffi#599bc3567ecf839240977b6d9aaf0b80f983b5aa"
   }
 }

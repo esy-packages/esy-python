@@ -1,17 +1,17 @@
 {
-  "checksum": "af7636fe66a851b096e7a9fa863225af",
+  "checksum": "699291193dc5ba31288201add0854a2d",
   "root": "esy-python@link-dev:./package.json",
   "node": {
-    "esy-zlib@github:prometheansacrifice/esy-zlib#cd046fb7258deabffaabe5d6963454858b04c1d3@d41d8cd9": {
+    "esy-zlib@github:esy-packages/esy-zlib#f691047f6fe5f2272e7a2e890f8055d3b0071b10@d41d8cd9": {
       "id":
-        "esy-zlib@github:prometheansacrifice/esy-zlib#cd046fb7258deabffaabe5d6963454858b04c1d3@d41d8cd9",
+        "esy-zlib@github:esy-packages/esy-zlib#f691047f6fe5f2272e7a2e890f8055d3b0071b10@d41d8cd9",
       "name": "esy-zlib",
       "version":
-        "github:prometheansacrifice/esy-zlib#cd046fb7258deabffaabe5d6963454858b04c1d3",
+        "github:esy-packages/esy-zlib#f691047f6fe5f2272e7a2e890f8055d3b0071b10",
       "source": {
         "type": "install",
         "source": [
-          "github:prometheansacrifice/esy-zlib#cd046fb7258deabffaabe5d6963454858b04c1d3"
+          "github:esy-packages/esy-zlib#f691047f6fe5f2272e7a2e890f8055d3b0071b10"
         ]
       },
       "overrides": [],
@@ -29,8 +29,25 @@
       },
       "overrides": [],
       "dependencies": [
-        "esy-zlib@github:prometheansacrifice/esy-zlib#cd046fb7258deabffaabe5d6963454858b04c1d3@d41d8cd9"
+        "esy-zlib@github:esy-packages/esy-zlib#f691047f6fe5f2272e7a2e890f8055d3b0071b10@d41d8cd9",
+        "esy-libffi@github:esy-ocaml/libffi#599bc3567ecf839240977b6d9aaf0b80f983b5aa@d41d8cd9"
       ],
+      "devDependencies": []
+    },
+    "esy-libffi@github:esy-ocaml/libffi#599bc3567ecf839240977b6d9aaf0b80f983b5aa@d41d8cd9": {
+      "id":
+        "esy-libffi@github:esy-ocaml/libffi#599bc3567ecf839240977b6d9aaf0b80f983b5aa@d41d8cd9",
+      "name": "esy-libffi",
+      "version":
+        "github:esy-ocaml/libffi#599bc3567ecf839240977b6d9aaf0b80f983b5aa",
+      "source": {
+        "type": "install",
+        "source": [
+          "github:esy-ocaml/libffi#599bc3567ecf839240977b6d9aaf0b80f983b5aa"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
       "devDependencies": []
     }
   }
