@@ -7,6 +7,9 @@
     "build": [
       "#{os == 'windows' ? './PCbuild/build.bat -e -p x64 -c Release' : './build-unix.sh' }"
     ],
+    "install": [
+      "#{os == 'windows' ? './install-windows.sh': 'make install' }"
+    ],
     "exportedEnv": {
       "PATH": {
         "scope": "global",
