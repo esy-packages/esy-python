@@ -8,7 +8,7 @@
       "#{os == 'windows' ? './PCbuild/build.bat -e -p x64 -c Release' : './build-unix.sh' }"
     ],
     "install": [
-      "#{os == 'windows' ? 'cp ./PCbuild/amd64/*.* $cur_install/bin/': 'make install' }"
+      "#{os == 'windows' ? 'cp -r ./PCbuild/amd64/*.* $cur_install/bin/': 'make install' }"
     ],
     "exportedEnv": {
       "PATH": {
