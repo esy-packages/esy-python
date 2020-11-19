@@ -2,4 +2,3 @@
 
 ./configure --prefix $cur__install
 make
-make install
