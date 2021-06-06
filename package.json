@@ -14,9 +14,9 @@
       "PYTHONPATH": "#{self.install / 'lib' / 'python3.7' / 'site-packages' }"
     },
     "exportedEnv": {
-      "PATH": {
+      "PYTHONPATH": {
         "scope": "global",
-        "val": "#{ os == 'windows' ? (self.target_dir / 'PCbuild' / 'amd64' : $PATH) : $PATH }"
+        "val": "#{self.install / 'lib' / 'python3.7' / 'site-packages'}:$PYTHONPATH"
       }
     }
   },
