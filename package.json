@@ -10,6 +10,9 @@
     "install": [
       "#{os == 'windows' ? './install-windows.sh': 'make install' }"
     ],
+    "buildEnv": {
+      "PYTHONPATH": "#{self.install / 'lib' / 'python3.7' / 'site-packages' }"
+    },
     "exportedEnv": {
       "PATH": {
         "scope": "global",
